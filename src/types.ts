@@ -10,13 +10,7 @@ export interface ICartItem {
   
 export interface IAppContext {
     loading: boolean;
-    cart: {
-        id: number;
-        title: string;
-        price: number;
-        img: string;
-        amount: number;
-    }[];
+    cart: ICartItem[];
     total: number;
     amount: number;
     clearCart: () => void;
